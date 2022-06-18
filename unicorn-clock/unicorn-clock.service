@@ -1,0 +1,9 @@
+[Unit]
+Description=Unicorn HAT clock
+# After=multi-user.target
+
+[Service]
+ExecStart=/usr/bin/python3 /home/pi/github/raspberry/unicorn-clock/unicorn-clock.py
+
+[Install]
+WantedBy=multi-user.target
