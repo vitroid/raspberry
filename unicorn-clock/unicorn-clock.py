@@ -55,7 +55,7 @@ def clock(now):
     font = ImageFont.truetype("/home/pi/github/raspberry/unicorn-clock/MyriadPro-Regular.otf", 14)
     msg = f"{now.tm_min:02d}"
     w, h = draw.textsize(msg, font=font)
-    draw.text((16-w, 16-h), msg, font=font, fill=(255,128,128))
+    draw.text((16-w, 16-h), msg, font=font, fill=(255,128,128), stroke_width=1, stroke_fill=(0,0,0))
 
     return img
 
